@@ -1,3 +1,6 @@
 [02/11/2025 15:52:27] Erro semântico: variável 'velocidade' já declarada no escopo 'global'.
 [02/11/2025 15:52:27] Erro semântico: tipo incompatível na atribuição. Esperado 'real', obtido 'texto'.
 [02/11/2025 15:52:27] Erro semântico: variável 'tempo' não declarada no escopo 'movimento1'.
+[02/11/2025 16:59:19] Erro semântico: variável 'velocidade' já declarada no escopo 'global'.
+[02/11/2025 16:59:19] Erro semântico: tipo incompatível na atribuição. Esperado 'real', obtido 'texto'.
+[02/11/2025 16:59:19] Erro semântico: variável 'tempo' não declarada no escopo 'movimento1'.
