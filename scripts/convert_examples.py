@@ -2,13 +2,13 @@ import json
 from pathlib import Path
 
 from antlr4 import FileStream, CommonTokenStream
-from RoboLangLexer import RoboLangLexer
-from RoboLangParser import RoboLangParser
+from src.RoboLangLexer import RoboLangLexer
+from src.RoboLangParser import RoboLangParser
 from src.robolang_ast_builder import ASTBuilder
 from src.ast_utils import ast_to_dict
 
 
-EXAMPLES_DIR = Path(__file__).resolve().parent.parent / 'examples'
+EXAMPLES_DIR = Path(__file__).resolve().parent.parent / 'exemplos'
 
 
 def convert_file(path: Path):
@@ -27,7 +27,7 @@ def main():
     print('Converting examples in', EXAMPLES_DIR)
     for f in sorted(EXAMPLES_DIR.glob('*.robo')):
         print('\n---')
-        print('File:', f.name)
+        print('Arquivo:', f.name)
         src, ast = convert_file(f)
         print('Source:')
         print(src)
