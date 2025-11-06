@@ -1,0 +1,9 @@
+robo myRobot {
+  mover x 10 cm
+  virar 90 graus
+  velocidade 5
+  esperar 100 ms
+  repetir 2 {
+    mover y 5 m
+  }
+}
