@@ -1,0 +1,5 @@
+robo alpha {
+  mover x 10 cm
+  virar 90 graus
+  velocidade 5
+}

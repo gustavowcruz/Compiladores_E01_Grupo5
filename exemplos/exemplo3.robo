@@ -1,0 +1,7 @@
+robo gamma {
+  velocidade 2.5
+  esperar 500 ms
+  repetir 1 {
+    mover y 0.5 m
+  }
+}

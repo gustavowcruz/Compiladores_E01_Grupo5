@@ -1,0 +1,8 @@
+robo beta {
+  mover z 12.5 m
+  esperar 200
+  repetir 3 {
+    mover x 2 cm
+    virar 45 graus
+  }
+}
