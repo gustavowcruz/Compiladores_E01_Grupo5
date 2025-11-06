@@ -1,4 +1,4 @@
-# Generated from RoboLang.g4 by ANTLR 4.13.2
+# Generated from RoboLang.g4 by ANTLR 4.13.1
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -87,7 +87,7 @@ class RoboLangParser ( Parser ):
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
-        self.checkVersion("4.13.2")
+        self.checkVersion("4.13.1")
         self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
 
@@ -130,6 +130,12 @@ class RoboLangParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitPrograma" ):
                 listener.exitPrograma(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitPrograma" ):
+                return visitor.visitPrograma(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -185,6 +191,12 @@ class RoboLangParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitListaComandos" ):
                 listener.exitListaComandos(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitListaComandos" ):
+                return visitor.visitListaComandos(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -252,6 +264,12 @@ class RoboLangParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitComando" ):
                 listener.exitComando(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitComando" ):
+                return visitor.visitComando(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -329,6 +347,12 @@ class RoboLangParser ( Parser ):
             if hasattr( listener, "exitMover" ):
                 listener.exitMover(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitMover" ):
+                return visitor.visitMover(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -378,6 +402,12 @@ class RoboLangParser ( Parser ):
             if hasattr( listener, "exitVirar" ):
                 listener.exitVirar(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitVirar" ):
+                return visitor.visitVirar(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -423,6 +453,12 @@ class RoboLangParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitVelocidade" ):
                 listener.exitVelocidade(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitVelocidade" ):
+                return visitor.visitVelocidade(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -472,6 +508,12 @@ class RoboLangParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitEsperar" ):
                 listener.exitEsperar(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitEsperar" ):
+                return visitor.visitEsperar(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -538,6 +580,12 @@ class RoboLangParser ( Parser ):
             if hasattr( listener, "exitRepetir" ):
                 listener.exitRepetir(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitRepetir" ):
+                return visitor.visitRepetir(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -591,6 +639,12 @@ class RoboLangParser ( Parser ):
             if hasattr( listener, "exitDistancia" ):
                 listener.exitDistancia(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitDistancia" ):
+                return visitor.visitDistancia(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -637,6 +691,12 @@ class RoboLangParser ( Parser ):
             if hasattr( listener, "exitAngulo" ):
                 listener.exitAngulo(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAngulo" ):
+                return visitor.visitAngulo(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -682,6 +742,12 @@ class RoboLangParser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitUnidade" ):
                 listener.exitUnidade(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitUnidade" ):
+                return visitor.visitUnidade(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
