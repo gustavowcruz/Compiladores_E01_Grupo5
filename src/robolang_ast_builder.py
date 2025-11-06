@@ -10,8 +10,8 @@ Usage notes:
 from typing import List
 
 try:
-    from RoboLangParser import RoboLangParser
-    from RoboLangVisitor import RoboLangVisitor
+    from src.RoboLangParser import RoboLangParser
+    from src.RoboLangVisitor import RoboLangVisitor
 except Exception:
     # If the generated files are not present yet this import will fail.
     # The user must run ANTLR to generate the Python runtime files from RoboLang.g4
