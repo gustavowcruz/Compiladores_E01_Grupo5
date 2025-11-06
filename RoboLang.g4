@@ -18,7 +18,7 @@ virar           : VIRAR angulo ;
 
 velocidade      : VELOCIDADE NUMBER ;
 
-esperar         : ESPERAR NUMBER MS? ; // O '?' torna o 'ms' opcional
+esperar         : ESPERAR NUMBER MS? ;
 
 repetir         : REPETIR NUMBER LBRACE listaComandos RBRACE ;
 
