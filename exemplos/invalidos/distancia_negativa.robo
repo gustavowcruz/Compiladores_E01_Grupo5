@@ -1,0 +1,3 @@
+robo test {
+  mover x -10 cm
+}

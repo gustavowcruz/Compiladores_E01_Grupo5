@@ -1,0 +1,5 @@
+robo test {
+  mover x 0 cm
+  virar 400 graus
+  velocidade 0
+}
