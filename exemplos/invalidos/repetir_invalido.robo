@@ -1,0 +1,5 @@
+robo test {
+  repetir 0 {
+    mover x 5 cm
+  }
+}
