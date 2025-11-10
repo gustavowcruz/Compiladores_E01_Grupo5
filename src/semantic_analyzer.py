@@ -47,7 +47,7 @@ class SemanticAnalyzer:
         
         # Validate program name
         if not program.name or not program.name.strip():
-            self._add_error(InvalidValueError("Program name cannot be empty"))
+            self._add_error(InvalidValueError("O nome do programa não pode ser vazio", program))
         
         # Validate commands
         self._analyze_commands(program.commands)
@@ -85,21 +85,21 @@ class SemanticAnalyzer:
         # Check distance is positive
         if move.distance <= 0:
             self._add_error(InvalidValueError(
-                f"Move distance must be positive, got {move.distance}",
+                f"Distancia de movimento deve ser positiva, obteve {move.distance}",
                 move
             ))
         
         # Check unit is valid
         if move.unit not in ['cm', 'm']:
             self._add_error(InvalidUnitError(
-                f"Invalid unit '{move.unit}', must be 'cm' or 'm'",
+                f"Unidade inválida: '{move.unit}', deve ser 'cm' ou 'm'",
                 move
             ))
         
         # Check axis is valid
         if move.axis not in ['x', 'y', 'z']:
             self._add_error(InvalidValueError(
-                f"Invalid axis '{move.axis}', must be 'x', 'y', or 'z'",
+                f"Eixo inválido: '{move.axis}', deve ser 'x', 'y' ou 'z'",
                 move
             ))
     
@@ -108,7 +108,7 @@ class SemanticAnalyzer:
         # Check angle is within valid range
         if turn.degrees < 0 or turn.degrees > 360:
             self._add_error(InvalidAngleError(
-                f"Turn angle must be between 0 and 360 degrees, got {turn.degrees}",
+                f"Angulo deve estar entre 0 e 360 graus, obteve {turn.degrees}",
                 turn
             ))
     
@@ -117,7 +117,7 @@ class SemanticAnalyzer:
         # Check speed is positive
         if speed.value <= 0:
             self._add_error(InvalidValueError(
-                f"Speed must be positive, got {speed.value}",
+                f"Velocidade deve ser positiva, obteve {speed.value}",
                 speed
             ))
     
@@ -126,7 +126,7 @@ class SemanticAnalyzer:
         # Check duration is positive
         if wait.duration <= 0:
             self._add_error(InvalidValueError(
-                f"Wait duration must be positive, got {wait.duration}",
+                f"Espera deve ser positiva, obteve {wait.duration}",
                 wait
             ))
     
@@ -135,7 +135,7 @@ class SemanticAnalyzer:
         # Check count is >= 1
         if repeat.count < 1:
             self._add_error(InvalidRepeatCountError(
-                f"Repeat count must be at least 1, got {repeat.count}",
+                f"Contagem de repetição deve ser pelo menos 1, obteve {repeat.count}",
                 repeat
             ))
         
