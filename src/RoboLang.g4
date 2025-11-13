@@ -1,10 +1,6 @@
 grammar RoboLang;
-
-
 programa        : ROBO ID LBRACE listaComandos RBRACE EOF;
-
 listaComandos   : comando* ;
-
 comando         : mover
                 | virar
                 | velocidade
@@ -13,21 +9,13 @@ comando         : mover
                 ;
 
 mover           : MOVER EIXO distancia ;
-
 virar           : VIRAR angulo ;
-
 velocidade      : VELOCIDADE NUMBER ;
-
 esperar         : ESPERAR NUMBER MS? ;
-
 repetir         : REPETIR NUMBER LBRACE listaComandos RBRACE ;
-
 distancia       : NUMBER unidade ;
-
 angulo          : NUMBER GRAUS ;
-
 unidade         : CM | M ;
-
 
 ROBO        : 'robo';
 MOVER       : 'mover';

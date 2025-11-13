@@ -11,26 +11,21 @@ class SemanticError(Exception):
         self.node = node
         super().__init__(message)
 
-
 class InvalidValueError(SemanticError):
     """Raised when a numeric value is invalid (e.g., negative when positive required)."""
     pass
-
 
 class InvalidUnitError(SemanticError):
     """Raised when an invalid unit is used."""
     pass
 
-
 class InvalidAngleError(SemanticError):
     """Raised when an angle is outside valid range."""
     pass
 
-
 class InvalidRepeatCountError(SemanticError):
     """Raised when repeat count is invalid."""
     pass
-
 
 class SemanticErrorCollector:
     """Collects multiple semantic errors during analysis."""

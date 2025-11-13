@@ -2,7 +2,6 @@ from antlr4 import *
 from RoboLangLexer import RoboLangLexer
 from RoboLangParser import RoboLangParser
 from RoboLangListener import RoboLangListener
-
 # Exemplo de código RoboLang para parsear
 input_text = """
 robo meuRobo {
@@ -17,7 +16,6 @@ robo meuRobo {
     }
 }
 """
-
 def main():
     # Criar o input stream
     input_stream = InputStream(input_text)
@@ -38,6 +36,6 @@ def main():
     print("Parse tree:")
     print(tree.toStringTree(recog=parser))
     print("\n✓ Programa RoboLang parseado com sucesso!")
-    
+
 if __name__ == '__main__':
     main()
