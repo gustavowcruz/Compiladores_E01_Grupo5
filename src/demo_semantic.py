@@ -144,7 +144,7 @@ def main():
     )
     
     print("\n" + "="*70)
-    print("DEMOSTRAÇÃO FINALIZADA")
+    print("DEMONSTRAÇÃO FINALIZADA")
     print("="*70)
 
 
