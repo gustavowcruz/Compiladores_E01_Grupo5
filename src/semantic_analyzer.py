@@ -108,7 +108,7 @@ class SemanticAnalyzer:
         # Check angle is within valid range
         if turn.degrees < 0 or turn.degrees > 360:
             self._add_error(InvalidAngleError(
-                f"Angulo deve estar entre 0 e 360 graus, obteve {turn.degrees}",
+                f"Ângulo deve estar entre 0 e 360 graus, obteve {turn.degrees}",
                 turn
             ))
     
