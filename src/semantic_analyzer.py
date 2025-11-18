@@ -85,7 +85,7 @@ class SemanticAnalyzer:
         # Check distance is positive
         if move.distance <= 0:
             self._add_error(InvalidValueError(
-                f"Distancia de movimento deve ser positiva, obteve {move.distance}",
+                f"Distância de movimento deve ser positiva, obteve {move.distance}",
                 move
             ))
         
