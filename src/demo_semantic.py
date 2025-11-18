@@ -13,7 +13,7 @@ from src.semantic_analyzer import SemanticAnalyzer
 def analyze_example(name: str, code: str):
     """Parse and analyze a code snippet."""
     print(f"\n{'='*70}")
-    print(f"Exêmplo: {name}")
+    print(f"Exemplo: {name}")
     print('='*70)
     print("Código:")
     print(code)
