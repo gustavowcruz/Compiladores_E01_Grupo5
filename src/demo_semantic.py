@@ -97,7 +97,7 @@ def main():
     )
 
     analyze_example(
-        "Angulo Inválido (> 360)",
+        "Ângulo Inválido (> 360)",
         """robo invalido {
   virar 400 graus
 }"""
