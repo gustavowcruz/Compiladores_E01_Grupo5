@@ -88,8 +88,15 @@ python -m src.test_semantic
 
 ## 🧾 Prints ou exemplos de saída
 
-![image.png](attachment:de87195c-bd05-4e2c-b437-c40a3f17b301.png)
 
-![image.png](attachment:ae80ef06-cf96-43ac-a79c-b6ed1ac9d37c.png)
+<img width="512" height="181" alt="saida 1" src="https://github.com/user-attachments/assets/aa8cae26-1740-4094-9f34-b573ad5bd35d" />
 
-![image.png](attachment:b5fb1ccd-1317-48df-9bd0-70d96c2448b7.png)
+
+
+<img width="451" height="66" alt="saida 2" src="https://github.com/user-attachments/assets/ed078bb6-181b-4154-b9c0-b15722ab991a" />
+
+
+
+
+<img width="594" height="237" alt="saida 3" src="https://github.com/user-attachments/assets/c29f386e-65c1-495c-b2a8-712a5f75aa11" />
+
